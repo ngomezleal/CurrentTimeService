@@ -28,7 +28,7 @@ namespace CurrentTimeService.Controllers
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)],
-                Origin = "Cabimas / Vzla - 123"
+                Origin = "Cabimas / Vzla - 123-456"
             })
             .ToArray();
         }
