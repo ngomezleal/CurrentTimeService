@@ -5,6 +5,10 @@ on:
   push:
     branches:
     - main
+  pull-request:
+    branches:
+    - main
+
 env:
   AZURE_WEBAPP_NAME: current-time-services
   AZURE_WEBAPP_PACKAGE_PATH: "./publish"
