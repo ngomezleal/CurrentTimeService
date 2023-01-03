@@ -5,9 +5,10 @@ on:
   push:
     branches:
     - main
-  pull-request:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
     branches:
-    - main
+      - main
 
 env:
   AZURE_WEBAPP_NAME: current-time-services
